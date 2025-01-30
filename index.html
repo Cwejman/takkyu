@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong Tournament Leaderboard</title>
+    <style>
+        body {
+            background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+            font-family: 'Courier New', serif;
+            display: flex;
+            color: white;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 42rem;
+            width: 100%;
+            text-align: center;
+        }
+
+        .table-wrapper {
+            border: 1px solid hsla(220, 50%, 80%, 20%);
+            border-radius: 10px;
+            width: calc(100% - 2px);
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        table {
+            width: calc(100% + 2px);
+            margin: -1px;
+            border-collapse: collapse; /* Fixes double borders */
+        }
+
+        th > span {
+            width: 10rem;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid hsla(220, 50%, 80%, 20%);
+        }
+
+        th {
+            background-color: hsla(220, 50%, 80%, 5%);
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h1 > span {
+            display: inline-block;
+            -webkit-animation: rotate 5s normal linear infinite;
+            animation: rotate 5s normal linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                -webkit-transform: rotate3d(0, 0, 1, 0deg);
+                transform: rotate3d(0, 0, 1, 0deg);
+            }
+            25% {
+                -webkit-transform: rotate3d(0, 0, 1, 90deg);
+                transform: rotate3d(0, 0, 1, 90deg);
+            }
+            50% {
+                -webkit-transform: rotate3d(0, 0, 1, 180deg);
+                transform: rotate3d(0, 0, 1, 180deg);
+            }
+            75% {
+                -webkit-transform: rotate3d(0, 0, 1, 270deg);
+                transform: rotate3d(0, 0, 1, 270deg);
+            }
+            100% {
+                -webkit-transform: rotate3d(0, 0, 1, 360deg);
+                transform: rotate3d(0, 0, 1, 360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1><span class="icon">🏓</span> Ping Pong Leaderboard</h1>
+
+<div class="container">
+    <div class="table-wrapper">
+        <table>
+            <thead>
+            <tr>
+                <th><span>Henrik</span></th>
+                <th><span>Jona</span></th>
+                <th><span>Markus</span></th>
+                <th><span>Sebastian</span></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>3</td>
+                <td>4</td>
+                <td>2</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
